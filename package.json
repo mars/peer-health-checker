@@ -1,0 +1,36 @@
+{
+  "name": "tinyrobot-science-web-ui",
+  "version": "1.0.0",
+  "description": "Next.js web UI for tinyrobot.science",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mars/tinyrobot-science-web-ui.git"
+  },
+  "keywords": [
+    "react",
+    "ssr",
+    "server-side-rendering"
+  ],
+  "author": "Mars Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mars/tinyrobot-science-web-ui/issues"
+  },
+  "homepage": "https://github.com/mars/tinyrobot-science-web-ui#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^6.1.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
