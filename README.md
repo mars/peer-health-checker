@@ -55,11 +55,11 @@ docker run \
 npm install
 npm run build
 mkdir -p heroku-slug/app
-cp -r !(heroku-slug) heroku-slug/app/
+cp -r !(heroku-slug) .next .profile.d heroku-slug/app/
 cd heroku-slug/app
 curl http://nodejs.org/dist/v10.9.0/node-v10.9.0-linux-x64.tar.gz | tar xzv
 cd ..
 tar czfv heroku-slug.tgz ./app
 ```
 
-The resulting slug archive `heroku-slug.tgz` has a **web** process of `node-v10.9.0-linux-x64/bin/npm start`.
+The resulting slug archive `heroku-slug.tgz` has a **web** process of `npm start`.

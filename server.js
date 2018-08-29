@@ -13,6 +13,9 @@ const peerUrl = process.env.HEALTH_CHECKER_PEER_URL;
 const selfUrl = process.env.HEALTH_CHECKER_SELF_URL;
 if ((peerUrl == null && selfUrl != null) || (peerUrl != null && selfUrl == null)) {
   throw new Error('HEALTH_CHECKER_PEER_URL & HEALTH_CHECKER_SELF_URL environment variables must be set together.');
+} else {
+  console.log('HEALTH_CHECKER_PEER_URL → ', JSON.stringify(peerUrl));
+  console.log('HEALTH_CHECKER_SELF_URL → ', JSON.stringify(selfUrl));
 }
 
 // Multi-process to utilize all CPU cores.
